@@ -1,0 +1,30 @@
+{
+    "name": "@alexisab/ora-promise",
+    "version": "0.1.0",
+    "description": "",
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "babel src -d lib",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "ora": "^3.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexisab/ora-promise.git"
+    },
+    "author": "Alexis Ablain",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/alexisab/ora-promise/issues"
+    },
+    "homepage": "https://github.com/alexisab/ora-promise#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "eslint": "^5.13.0",
+        "prettier": "^1.16.4"
+    }
+}

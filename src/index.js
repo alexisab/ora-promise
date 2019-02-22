@@ -9,9 +9,9 @@ module.exports = (message, pendingPromise) => {
 
     return new Promise(resolve => {
         pendingPromise
-            .then(() => {
+            .then(res => {
                 spinner.succeed()
-                resolve()
+                resolve(res)
             })
             .catch(e => {
                 spinner.fail()
